@@ -32,14 +32,11 @@ public class Car {
                 '.';
     }
 
-
-
     static class Builder{
         private int power;
         private String model;
         private int year;
 
-        // типо model обязателен, поэтому пихаем в конструктор
         Builder(String model){
             this.model = model;
         }
@@ -57,6 +54,5 @@ public class Car {
         public Car build(){
             return new Car(this);
         }
-
     }
 }
